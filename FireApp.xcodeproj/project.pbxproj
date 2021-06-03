@@ -9,12 +9,18 @@
 /* Begin PBXBuildFile section */
 		842F0C93266576900078175F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842F0C92266576900078175F /* AppDelegate.swift */; };
 		842F0C95266576900078175F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842F0C94266576900078175F /* SceneDelegate.swift */; };
-		842F0C97266576900078175F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842F0C96266576900078175F /* ViewController.swift */; };
 		842F0C9A266576900078175F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842F0C98266576900078175F /* Main.storyboard */; };
 		842F0C9C266576910078175F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 842F0C9B266576910078175F /* Assets.xcassets */; };
 		842F0C9F266576910078175F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842F0C9D266576910078175F /* LaunchScreen.storyboard */; };
 		842F0CAA266576910078175F /* FireAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842F0CA9266576910078175F /* FireAppTests.swift */; };
 		842F0CB5266576920078175F /* FireAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842F0CB4266576920078175F /* FireAppUITests.swift */; };
+		843FE35A2667123500E900C9 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843FE3592667123500E900C9 /* MainTabBarController.swift */; };
+		843FE3622667170100E900C9 /* Fire.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843FE3612667170100E900C9 /* Fire.storyboard */; };
+		843FE3672667172700E900C9 /* Life.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843FE3662667172700E900C9 /* Life.storyboard */; };
+		843FE36C2667174800E900C9 /* Investment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843FE36B2667174800E900C9 /* Investment.storyboard */; };
+		843FE3712667176C00E900C9 /* FireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843FE3702667176C00E900C9 /* FireViewController.swift */; };
+		843FE376266717AA00E900C9 /* LifeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843FE375266717A900E900C9 /* LifeViewController.swift */; };
+		843FE37B26671C4F00E900C9 /* InvestmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843FE37A26671C4F00E900C9 /* InvestmentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +44,6 @@
 		842F0C8F266576900078175F /* FireApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FireApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		842F0C92266576900078175F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		842F0C94266576900078175F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		842F0C96266576900078175F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		842F0C99266576900078175F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		842F0C9B266576910078175F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		842F0C9E266576910078175F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +54,13 @@
 		842F0CB0266576910078175F /* FireAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FireAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		842F0CB4266576920078175F /* FireAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireAppUITests.swift; sourceTree = "<group>"; };
 		842F0CB6266576920078175F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		843FE3592667123500E900C9 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		843FE3612667170100E900C9 /* Fire.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Fire.storyboard; sourceTree = "<group>"; };
+		843FE3662667172700E900C9 /* Life.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Life.storyboard; sourceTree = "<group>"; };
+		843FE36B2667174800E900C9 /* Investment.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Investment.storyboard; sourceTree = "<group>"; };
+		843FE3702667176C00E900C9 /* FireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireViewController.swift; sourceTree = "<group>"; };
+		843FE375266717A900E900C9 /* LifeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeViewController.swift; sourceTree = "<group>"; };
+		843FE37A26671C4F00E900C9 /* InvestmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +111,10 @@
 		842F0C91266576900078175F /* FireApp */ = {
 			isa = PBXGroup;
 			children = (
+				843FE38A2667975600E900C9 /* Controller */,
+				843FE3892667968000E900C9 /* Storyboard */,
 				842F0C92266576900078175F /* AppDelegate.swift */,
 				842F0C94266576900078175F /* SceneDelegate.swift */,
-				842F0C96266576900078175F /* ViewController.swift */,
-				842F0C98266576900078175F /* Main.storyboard */,
 				842F0C9B266576910078175F /* Assets.xcassets */,
 				842F0C9D266576910078175F /* LaunchScreen.storyboard */,
 				842F0CA0266576910078175F /* Info.plist */,
@@ -126,6 +138,28 @@
 				842F0CB6266576920078175F /* Info.plist */,
 			);
 			path = FireAppUITests;
+			sourceTree = "<group>";
+		};
+		843FE3892667968000E900C9 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				842F0C98266576900078175F /* Main.storyboard */,
+				843FE3612667170100E900C9 /* Fire.storyboard */,
+				843FE3662667172700E900C9 /* Life.storyboard */,
+				843FE36B2667174800E900C9 /* Investment.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		843FE38A2667975600E900C9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				843FE3592667123500E900C9 /* MainTabBarController.swift */,
+				843FE3702667176C00E900C9 /* FireViewController.swift */,
+				843FE375266717A900E900C9 /* LifeViewController.swift */,
+				843FE37A26671C4F00E900C9 /* InvestmentViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +265,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				843FE3672667172700E900C9 /* Life.storyboard in Resources */,
+				843FE3622667170100E900C9 /* Fire.storyboard in Resources */,
 				842F0C9F266576910078175F /* LaunchScreen.storyboard in Resources */,
 				842F0C9C266576910078175F /* Assets.xcassets in Resources */,
 				842F0C9A266576900078175F /* Main.storyboard in Resources */,
+				843FE36C2667174800E900C9 /* Investment.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +295,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				842F0C97266576900078175F /* ViewController.swift in Sources */,
+				843FE376266717AA00E900C9 /* LifeViewController.swift in Sources */,
+				843FE3712667176C00E900C9 /* FireViewController.swift in Sources */,
 				842F0C93266576900078175F /* AppDelegate.swift in Sources */,
+				843FE37B26671C4F00E900C9 /* InvestmentViewController.swift in Sources */,
 				842F0C95266576900078175F /* SceneDelegate.swift in Sources */,
+				843FE35A2667123500E900C9 /* MainTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
