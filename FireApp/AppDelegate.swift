@@ -13,7 +13,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        // タブバーコントローラーのカスタマイズ
+        UITabBar.appearance().tintColor = UIColor.red
+        UITabBar.appearance().unselectedItemTintColor = UIColor.lightGray
+        UITabBar.appearance().backgroundColor = UIColor.systemBackground
+        
         return true
     }
 
