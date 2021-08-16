@@ -14,8 +14,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
+        // ナビゲーションバーのカスタマイズ
+        UINavigationBar.appearance().barTintColor = UIColor(named: "custom_Red")
+        UINavigationBar.appearance().tintColor = UIColor.white
+        UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor.white]
         // タブバーコントローラーのカスタマイズ
-        UITabBar.appearance().tintColor = UIColor.red
+        UITabBar.appearance().tintColor = UIColor(named: "custom_Red")
         UITabBar.appearance().unselectedItemTintColor = UIColor.lightGray
         UITabBar.appearance().backgroundColor = UIColor.systemBackground
         
