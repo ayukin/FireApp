@@ -1,33 +1,185 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3pd-nu-j5i">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wAb-gx-S4H">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Fire View Controller-->
+        <!--FIRE簡易計算表-->
         <scene sceneID="5IW-oR-do8">
             <objects>
                 <viewController id="3pd-nu-j5i" customClass="FireViewController" customModule="FireApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1H2-LM-BPu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DXt-K6-BRh" customClass="SpreadsheetView" customModule="SpreadsheetView">
+                                <rect key="frame" x="15" y="223" width="384" height="619"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ny9-p2-CTI">
+                                <rect key="frame" x="15" y="108" width="384" height="95"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="iEh-ci-erx">
+                                        <rect key="frame" x="15" y="10" width="354" height="40"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A3h-pp-B6m">
+                                                <rect key="frame" x="0.0" y="0.0" width="354" height="20.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="サイドFIREに必要な金額" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bY3-LG-hyy">
+                                                        <rect key="frame" x="0.0" y="0.0" width="190" height="20.5"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="190" id="2fw-aA-qs8"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00,000,000円" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c7p-9H-g13">
+                                                        <rect key="frame" x="190" y="0.0" width="164" height="20.5"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="○○年後の●●歳にFIREできます。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UPY-Nl-BOE">
+                                                <rect key="frame" x="0.0" y="20.5" width="354" height="19.5"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" systemColor="systemPinkColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0cT-3t-wwC">
+                                        <rect key="frame" x="15" y="58" width="80" height="25"/>
+                                        <color key="backgroundColor" name="custom_Red"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="67e-4R-hG4"/>
+                                            <constraint firstAttribute="height" constant="25" id="mHu-z9-hdP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <state key="normal" title="FIRE">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="plP-cf-Ffn">
+                                        <rect key="frame" x="103" y="58" width="80" height="25"/>
+                                        <color key="backgroundColor" name="custom_Red"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="Egp-Fn-NXB"/>
+                                            <constraint firstAttribute="width" constant="80" id="Szy-NX-9vq"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <state key="normal" title="サイドFIRE">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wU5-T8-qOL">
+                                        <rect key="frame" x="191" y="58" width="80" height="25"/>
+                                        <color key="backgroundColor" name="custom_Red"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="Jik-cb-Ew6"/>
+                                            <constraint firstAttribute="height" constant="25" id="zc4-qT-I2q"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <state key="normal" title="目標">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" name="custom_Pink"/>
+                                <constraints>
+                                    <constraint firstItem="iEh-ci-erx" firstAttribute="leading" secondItem="ny9-p2-CTI" secondAttribute="leading" constant="15" id="AYt-z6-dLe"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="wU5-T8-qOL" secondAttribute="trailing" id="GsT-J5-YmA"/>
+                                    <constraint firstAttribute="bottom" secondItem="wU5-T8-qOL" secondAttribute="bottom" constant="12" id="H8A-x5-3uJ"/>
+                                    <constraint firstItem="plP-cf-Ffn" firstAttribute="top" secondItem="iEh-ci-erx" secondAttribute="bottom" constant="8" symbolic="YES" id="I7u-E5-3ug"/>
+                                    <constraint firstAttribute="bottom" secondItem="0cT-3t-wwC" secondAttribute="bottom" constant="12" id="KHW-Kc-eTm"/>
+                                    <constraint firstItem="wU5-T8-qOL" firstAttribute="leading" secondItem="plP-cf-Ffn" secondAttribute="trailing" constant="8" symbolic="YES" id="Nrv-0E-Cp4"/>
+                                    <constraint firstAttribute="height" constant="95" id="UJM-EU-8jJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="iEh-ci-erx" secondAttribute="trailing" constant="15" id="Wtk-FR-m9V"/>
+                                    <constraint firstItem="iEh-ci-erx" firstAttribute="top" secondItem="ny9-p2-CTI" secondAttribute="top" constant="10" id="XNi-Yc-MH0"/>
+                                    <constraint firstItem="0cT-3t-wwC" firstAttribute="top" secondItem="iEh-ci-erx" secondAttribute="bottom" constant="8" symbolic="YES" id="bQS-VD-1Xe"/>
+                                    <constraint firstItem="0cT-3t-wwC" firstAttribute="leading" secondItem="ny9-p2-CTI" secondAttribute="leading" constant="15" id="goe-3T-ewi"/>
+                                    <constraint firstItem="plP-cf-Ffn" firstAttribute="leading" secondItem="0cT-3t-wwC" secondAttribute="trailing" constant="8" symbolic="YES" id="hlE-yC-xam"/>
+                                    <constraint firstAttribute="bottom" secondItem="plP-cf-Ffn" secondAttribute="bottom" constant="12" id="k0v-90-8wy"/>
+                                    <constraint firstItem="wU5-T8-qOL" firstAttribute="top" secondItem="iEh-ci-erx" secondAttribute="bottom" constant="8" symbolic="YES" id="mJh-Qh-lw6"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Pzj-g0-ucZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DXt-K6-BRh" firstAttribute="leading" secondItem="Pzj-g0-ucZ" secondAttribute="leading" constant="15" id="1H5-h4-pRx"/>
+                            <constraint firstItem="Pzj-g0-ucZ" firstAttribute="trailing" secondItem="ny9-p2-CTI" secondAttribute="trailing" constant="15" id="8f3-Vb-lQz"/>
+                            <constraint firstItem="Pzj-g0-ucZ" firstAttribute="bottom" secondItem="DXt-K6-BRh" secondAttribute="bottom" constant="20" id="HGP-hA-24H"/>
+                            <constraint firstItem="Pzj-g0-ucZ" firstAttribute="trailing" secondItem="DXt-K6-BRh" secondAttribute="trailing" constant="15" id="QE4-4A-hS0"/>
+                            <constraint firstItem="ny9-p2-CTI" firstAttribute="leading" secondItem="Pzj-g0-ucZ" secondAttribute="leading" constant="15" id="UQu-o0-3rb"/>
+                            <constraint firstItem="DXt-K6-BRh" firstAttribute="top" secondItem="ny9-p2-CTI" secondAttribute="bottom" constant="20" id="gHg-4h-LZD"/>
+                            <constraint firstItem="ny9-p2-CTI" firstAttribute="top" secondItem="Pzj-g0-ucZ" secondAttribute="top" constant="20" id="gaS-nn-dOV"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Gbg-mD-8nC"/>
+                    <navigationItem key="navigationItem" title="FIRE簡易計算表" id="Gbg-mD-8nC">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="graph" id="tQd-mv-kO3"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="record" id="v2S-UL-B9g"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="achievementLabel" destination="UPY-Nl-BOE" id="NYy-wC-g5x"/>
+                        <outlet property="fireChangeButton" destination="0cT-3t-wwC" id="OW9-Fu-OzR"/>
+                        <outlet property="goalChangeButton" destination="wU5-T8-qOL" id="G1K-wb-aTG"/>
+                        <outlet property="graphButton" destination="tQd-mv-kO3" id="hUN-fH-6ET"/>
+                        <outlet property="moneyLabel" destination="c7p-9H-g13" id="V9M-y1-hDC"/>
+                        <outlet property="recordButton" destination="v2S-UL-B9g" id="OAj-dU-TzF"/>
+                        <outlet property="sideFireChangeButton" destination="plP-cf-Ffn" id="GI1-WB-P3Q"/>
+                        <outlet property="spreadsheetView" destination="DXt-K6-BRh" id="qjH-mY-mtp"/>
+                        <outlet property="titleLabel" destination="bY3-LG-hyy" id="Ch8-cA-jFe"/>
+                        <outlet property="wrapView" destination="ny9-p2-CTI" id="jux-UP-EaF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GFf-lC-D7W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-486" y="410"/>
+            <point key="canvasLocation" x="602.89855072463774" y="410.49107142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="P60-Wo-wtt">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wAb-gx-S4H" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="630-Cm-SZ1">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="3pd-nu-j5i" kind="relationship" relationship="rootViewController" id="CtZ-NH-2f0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VrS-TG-yFA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-307.24637681159425" y="410.49107142857139"/>
         </scene>
     </scenes>
     <resources>
+        <image name="graph" width="25" height="25"/>
+        <image name="record" width="25" height="25"/>
+        <namedColor name="custom_Pink">
+            <color red="1" green="0.89399999380111694" blue="0.88200002908706665" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="custom_Red">
+            <color red="0.94099998474121094" green="0.37599998712539673" blue="0.37599998712539673" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
