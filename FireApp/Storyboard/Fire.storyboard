@@ -17,140 +17,113 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7Kf-8h-Jfi">
-                                <rect key="frame" x="15" y="103" width="384" height="185"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ny9-p2-CTI">
-                                        <rect key="frame" x="0.0" y="0.0" width="384" height="185"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="iEh-ci-erx">
-                                                <rect key="frame" x="15" y="20" width="354" height="35"/>
-                                                <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A3h-pp-B6m">
-                                                        <rect key="frame" x="0.0" y="0.0" width="354" height="20.5"/>
-                                                        <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="FIREに必要な金額" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bY3-LG-hyy">
-                                                                <rect key="frame" x="0.0" y="0.0" width="247.5" height="20.5"/>
-                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="00,000,000円" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c7p-9H-g13">
-                                                                <rect key="frame" x="247.5" y="0.0" width="106.5" height="20.5"/>
-                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                        </subviews>
-                                                    </stackView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="○○年後の●●歳にFIREできます。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UPY-Nl-BOE">
-                                                        <rect key="frame" x="0.0" y="20.5" width="354" height="14.5"/>
-                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                        <color key="textColor" systemColor="systemPinkColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="QS2-wS-exm">
-                                                <rect key="frame" x="15" y="75" width="354" height="35"/>
-                                                <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VdH-2n-8Li">
-                                                        <rect key="frame" x="0.0" y="0.0" width="354" height="20.5"/>
-                                                        <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="サイドFIREに必要な金額" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JPs-M4-T9z">
-                                                                <rect key="frame" x="0.0" y="0.0" width="247.5" height="20.5"/>
-                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="00,000,000円" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fuk-UW-jqZ">
-                                                                <rect key="frame" x="247.5" y="0.0" width="106.5" height="20.5"/>
-                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                        </subviews>
-                                                    </stackView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="○○年後の●●歳にサイドFIREできます。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="noi-gQ-gzp">
-                                                        <rect key="frame" x="0.0" y="20.5" width="354" height="14.5"/>
-                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                        <color key="textColor" systemColor="systemRedColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="EZ5-yV-Eb0">
-                                                <rect key="frame" x="15" y="130" width="354" height="35"/>
-                                                <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="whV-BO-Y7m">
-                                                        <rect key="frame" x="0.0" y="0.0" width="354" height="20.5"/>
-                                                        <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="目標金額" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ff-cq-7GT">
-                                                                <rect key="frame" x="0.0" y="0.0" width="247.5" height="20.5"/>
-                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="00,000,000円" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PcY-Kt-0jk">
-                                                                <rect key="frame" x="247.5" y="0.0" width="106.5" height="20.5"/>
-                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                        </subviews>
-                                                    </stackView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="○○年後の●●歳に目標金額に到達できます。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DxI-O4-Id2">
-                                                        <rect key="frame" x="0.0" y="20.5" width="354" height="14.5"/>
-                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                        <color key="textColor" systemColor="systemRedColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                            </stackView>
-                                        </subviews>
-                                        <color key="backgroundColor" name="custom_Pink"/>
-                                        <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="QS2-wS-exm" secondAttribute="trailing" constant="15" id="5Mh-DB-MRE"/>
-                                            <constraint firstItem="EZ5-yV-Eb0" firstAttribute="leading" secondItem="ny9-p2-CTI" secondAttribute="leading" constant="15" id="6SF-P4-0la"/>
-                                            <constraint firstItem="QS2-wS-exm" firstAttribute="leading" secondItem="ny9-p2-CTI" secondAttribute="leading" constant="15" id="7KN-ke-7lz"/>
-                                            <constraint firstAttribute="trailing" secondItem="iEh-ci-erx" secondAttribute="trailing" constant="15" id="HKx-dR-wgd"/>
-                                            <constraint firstItem="QS2-wS-exm" firstAttribute="top" secondItem="iEh-ci-erx" secondAttribute="bottom" constant="20" id="MHP-x9-8RJ"/>
-                                            <constraint firstAttribute="trailing" secondItem="EZ5-yV-Eb0" secondAttribute="trailing" constant="15" id="R8a-3A-mHY"/>
-                                            <constraint firstItem="iEh-ci-erx" firstAttribute="top" secondItem="ny9-p2-CTI" secondAttribute="top" constant="20" id="Syg-lw-mCx"/>
-                                            <constraint firstItem="iEh-ci-erx" firstAttribute="leading" secondItem="ny9-p2-CTI" secondAttribute="leading" constant="15" id="qI4-fo-9fa"/>
-                                            <constraint firstItem="EZ5-yV-Eb0" firstAttribute="top" secondItem="QS2-wS-exm" secondAttribute="bottom" constant="20" id="r9i-Tq-GqT"/>
-                                            <constraint firstAttribute="bottom" secondItem="EZ5-yV-Eb0" secondAttribute="bottom" constant="20" symbolic="YES" id="tij-fA-PzU"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="185" id="wLn-iH-Itg"/>
-                                </constraints>
-                            </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DXt-K6-BRh" customClass="SpreadsheetView" customModule="SpreadsheetView">
-                                <rect key="frame" x="15" y="308" width="384" height="534"/>
+                                <rect key="frame" x="15" y="223" width="384" height="619"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ny9-p2-CTI">
+                                <rect key="frame" x="15" y="108" width="384" height="95"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="iEh-ci-erx">
+                                        <rect key="frame" x="15" y="10" width="354" height="40"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A3h-pp-B6m">
+                                                <rect key="frame" x="0.0" y="0.0" width="354" height="20.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="サイドFIREに必要な金額" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bY3-LG-hyy">
+                                                        <rect key="frame" x="0.0" y="0.0" width="190" height="20.5"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="190" id="2fw-aA-qs8"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00,000,000円" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c7p-9H-g13">
+                                                        <rect key="frame" x="190" y="0.0" width="164" height="20.5"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="○○年後の●●歳にFIREできます。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UPY-Nl-BOE">
+                                                <rect key="frame" x="0.0" y="20.5" width="354" height="19.5"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" systemColor="systemPinkColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0cT-3t-wwC">
+                                        <rect key="frame" x="15" y="58" width="80" height="25"/>
+                                        <color key="backgroundColor" name="custom_Red"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="67e-4R-hG4"/>
+                                            <constraint firstAttribute="height" constant="25" id="mHu-z9-hdP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <state key="normal" title="FIRE">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="plP-cf-Ffn">
+                                        <rect key="frame" x="103" y="58" width="80" height="25"/>
+                                        <color key="backgroundColor" name="custom_Red"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="Egp-Fn-NXB"/>
+                                            <constraint firstAttribute="width" constant="80" id="Szy-NX-9vq"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <state key="normal" title="サイドFIRE">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wU5-T8-qOL">
+                                        <rect key="frame" x="191" y="58" width="80" height="25"/>
+                                        <color key="backgroundColor" name="custom_Red"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="Jik-cb-Ew6"/>
+                                            <constraint firstAttribute="height" constant="25" id="zc4-qT-I2q"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <state key="normal" title="目標">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" name="custom_Pink"/>
+                                <constraints>
+                                    <constraint firstItem="iEh-ci-erx" firstAttribute="leading" secondItem="ny9-p2-CTI" secondAttribute="leading" constant="15" id="AYt-z6-dLe"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="wU5-T8-qOL" secondAttribute="trailing" id="GsT-J5-YmA"/>
+                                    <constraint firstAttribute="bottom" secondItem="wU5-T8-qOL" secondAttribute="bottom" constant="12" id="H8A-x5-3uJ"/>
+                                    <constraint firstItem="plP-cf-Ffn" firstAttribute="top" secondItem="iEh-ci-erx" secondAttribute="bottom" constant="8" symbolic="YES" id="I7u-E5-3ug"/>
+                                    <constraint firstAttribute="bottom" secondItem="0cT-3t-wwC" secondAttribute="bottom" constant="12" id="KHW-Kc-eTm"/>
+                                    <constraint firstItem="wU5-T8-qOL" firstAttribute="leading" secondItem="plP-cf-Ffn" secondAttribute="trailing" constant="8" symbolic="YES" id="Nrv-0E-Cp4"/>
+                                    <constraint firstAttribute="height" constant="95" id="UJM-EU-8jJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="iEh-ci-erx" secondAttribute="trailing" constant="15" id="Wtk-FR-m9V"/>
+                                    <constraint firstItem="iEh-ci-erx" firstAttribute="top" secondItem="ny9-p2-CTI" secondAttribute="top" constant="10" id="XNi-Yc-MH0"/>
+                                    <constraint firstItem="0cT-3t-wwC" firstAttribute="top" secondItem="iEh-ci-erx" secondAttribute="bottom" constant="8" symbolic="YES" id="bQS-VD-1Xe"/>
+                                    <constraint firstItem="0cT-3t-wwC" firstAttribute="leading" secondItem="ny9-p2-CTI" secondAttribute="leading" constant="15" id="goe-3T-ewi"/>
+                                    <constraint firstItem="plP-cf-Ffn" firstAttribute="leading" secondItem="0cT-3t-wwC" secondAttribute="trailing" constant="8" symbolic="YES" id="hlE-yC-xam"/>
+                                    <constraint firstAttribute="bottom" secondItem="plP-cf-Ffn" secondAttribute="bottom" constant="12" id="k0v-90-8wy"/>
+                                    <constraint firstItem="wU5-T8-qOL" firstAttribute="top" secondItem="iEh-ci-erx" secondAttribute="bottom" constant="8" symbolic="YES" id="mJh-Qh-lw6"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Pzj-g0-ucZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="DXt-K6-BRh" firstAttribute="leading" secondItem="Pzj-g0-ucZ" secondAttribute="leading" constant="15" id="1H5-h4-pRx"/>
+                            <constraint firstItem="Pzj-g0-ucZ" firstAttribute="trailing" secondItem="ny9-p2-CTI" secondAttribute="trailing" constant="15" id="8f3-Vb-lQz"/>
                             <constraint firstItem="Pzj-g0-ucZ" firstAttribute="bottom" secondItem="DXt-K6-BRh" secondAttribute="bottom" constant="20" id="HGP-hA-24H"/>
-                            <constraint firstItem="DXt-K6-BRh" firstAttribute="top" secondItem="7Kf-8h-Jfi" secondAttribute="bottom" constant="20" id="Jdc-Ei-3s1"/>
                             <constraint firstItem="Pzj-g0-ucZ" firstAttribute="trailing" secondItem="DXt-K6-BRh" secondAttribute="trailing" constant="15" id="QE4-4A-hS0"/>
-                            <constraint firstItem="7Kf-8h-Jfi" firstAttribute="top" secondItem="Pzj-g0-ucZ" secondAttribute="top" constant="15" id="c4L-TH-rf3"/>
-                            <constraint firstItem="Pzj-g0-ucZ" firstAttribute="trailing" secondItem="7Kf-8h-Jfi" secondAttribute="trailing" constant="15" id="jSL-4C-apA"/>
-                            <constraint firstItem="7Kf-8h-Jfi" firstAttribute="leading" secondItem="Pzj-g0-ucZ" secondAttribute="leading" constant="15" id="zWi-wN-NCq"/>
+                            <constraint firstItem="ny9-p2-CTI" firstAttribute="leading" secondItem="Pzj-g0-ucZ" secondAttribute="leading" constant="15" id="UQu-o0-3rb"/>
+                            <constraint firstItem="DXt-K6-BRh" firstAttribute="top" secondItem="ny9-p2-CTI" secondAttribute="bottom" constant="20" id="gHg-4h-LZD"/>
+                            <constraint firstItem="ny9-p2-CTI" firstAttribute="top" secondItem="Pzj-g0-ucZ" secondAttribute="top" constant="20" id="gaS-nn-dOV"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="FIRE簡易計算表" id="Gbg-mD-8nC">
@@ -158,15 +131,15 @@
                         <barButtonItem key="rightBarButtonItem" title="Item" image="record" id="v2S-UL-B9g"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="fireAchievementLabel" destination="UPY-Nl-BOE" id="8ia-Be-GL4"/>
-                        <outlet property="fireMoneyLabel" destination="c7p-9H-g13" id="yNs-mH-aij"/>
-                        <outlet property="goalAchievementLabel" destination="DxI-O4-Id2" id="24z-09-oga"/>
-                        <outlet property="goalMoneyLabel" destination="PcY-Kt-0jk" id="lJS-pA-Dl9"/>
+                        <outlet property="achievementLabel" destination="UPY-Nl-BOE" id="NYy-wC-g5x"/>
+                        <outlet property="fireChangeButton" destination="0cT-3t-wwC" id="OW9-Fu-OzR"/>
+                        <outlet property="goalChangeButton" destination="wU5-T8-qOL" id="G1K-wb-aTG"/>
                         <outlet property="graphButton" destination="tQd-mv-kO3" id="hUN-fH-6ET"/>
+                        <outlet property="moneyLabel" destination="c7p-9H-g13" id="V9M-y1-hDC"/>
                         <outlet property="recordButton" destination="v2S-UL-B9g" id="OAj-dU-TzF"/>
-                        <outlet property="sideFireAchievementlabel" destination="noi-gQ-gzp" id="GtE-X7-uPj"/>
-                        <outlet property="sideFireMoneyLabel" destination="fuk-UW-jqZ" id="AG6-zr-775"/>
+                        <outlet property="sideFireChangeButton" destination="plP-cf-Ffn" id="GI1-WB-P3Q"/>
                         <outlet property="spreadsheetView" destination="DXt-K6-BRh" id="qjH-mY-mtp"/>
+                        <outlet property="titleLabel" destination="bY3-LG-hyy" id="Ch8-cA-jFe"/>
                         <outlet property="wrapView" destination="ny9-p2-CTI" id="jux-UP-EaF"/>
                     </connections>
                 </viewController>
@@ -199,14 +172,14 @@
         <namedColor name="custom_Pink">
             <color red="1" green="0.89399999380111694" blue="0.88200002908706665" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <namedColor name="custom_Red">
+            <color red="0.94099998474121094" green="0.37599998712539673" blue="0.37599998712539673" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
